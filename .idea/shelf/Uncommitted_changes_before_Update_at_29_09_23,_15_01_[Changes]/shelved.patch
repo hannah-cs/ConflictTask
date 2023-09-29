@@ -1,0 +1,35 @@
+Index: Order.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Order.java b/Order.java
+new file mode 100644
+--- /dev/null	(date 1695992145321)
++++ b/Order.java	(date 1695992145321)
+@@ -0,0 +1,25 @@
++public class Order extends FoodItem{
++//Order Class
++//Attributes: orderID, foodItems, totalPrice
++//Methods: addFoodItem(), calculateTotal()
++import java.util.ArrayList;
++
++   private int orderId;
++   private ArrayList<FoodItem> foodItems = new ArrayList<>();
++
++    private double totalPrice;
++
++    public void addFoodItem(FoodItem... items) {
++        for (FoodItem item : items) {
++            foodItems.add(item);
++        }
++    }
++
++    public double calculateTotal() {
++        double total = 0.0;
++        for (FoodItem item : foodItems) {
++            total += item.getPrice();
++        }
++        return total;
++    }
++
