@@ -5,7 +5,6 @@ public class Restaurant {
         private List<FoodItem> foodMenu;
         private List<Table> tables;
         private List<Order> orders;
-
         public Library() {
             this.foodMenu = new ArrayList<>();
             this.tables = new ArrayList<>();
