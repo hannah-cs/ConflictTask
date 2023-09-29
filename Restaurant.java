@@ -10,13 +10,13 @@ public class Restaurant {
             this.tables = new ArrayList<>();
             this.orders = new ArrayList<>();
         }
-        public void addBook(FoodItem food){
+        public void addFoodItem(FoodItem food){
             foodMenu.add(food);
         }
-        public void registerMember(Table table){
+        public void addTable(Table table){
             tables.add(table);
         }
-        public void issueLoan(Order order){
+        public void placeOrder(Order order){
             orders.add(order);
         }
 }
